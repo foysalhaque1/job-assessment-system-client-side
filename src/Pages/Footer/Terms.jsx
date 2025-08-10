@@ -3,7 +3,7 @@ import React from 'react';
 const Terms = () => {
     return (
         <div>
-             <div className='w-11/12 mx-auto'>
+             <div className='w-11/12 mx-auto mt-10'>
             <div className='text-center my-5'>
 
             <h2 className='text-xl font-bold'>Personality Tests</h2>
