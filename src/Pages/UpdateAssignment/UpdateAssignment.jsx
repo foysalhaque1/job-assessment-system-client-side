@@ -64,26 +64,26 @@ const UpdateAssignment = () => {
                 </div>
                 <form onSubmit={handleSubmit} >
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6' >
-                        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
+                        <fieldset className="fieldset border-black bg-base-200  rounded-box  border p-4">
 
 
-                            <label className="label">Title</label>
+                            <label className="label text-xl font-bold">Title</label>
                             <input defaultValue={data.Title} type="text" name='Title' className="input" placeholder="Enter Title" />
 
 
                         </fieldset>
-                        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
+                        <fieldset className="fieldset bg-base-200 border-black rounded-box  border p-4">
 
 
-                            <label className="label">Thumbnails</label>
+                            <label className="label text-xl font-bold">Thumbnails</label>
                             <input defaultValue={data.thumbnails} type="text" name='thumbnails' className="input" placeholder="Enter thumbnails" />
 
 
                         </fieldset>
-                        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
+                        <fieldset className="fieldset bg-base-200 border-black rounded-box  border p-4">
 
 
-                            <label className="label">Level</label>
+                            <label className="label text-xl font-bold">Level</label>
                             <select name='level' defaultValue={data.level} className="select">
                                 <option disabled={true}>Pick a color</option>
                                 <option>Easy</option>
@@ -94,10 +94,10 @@ const UpdateAssignment = () => {
 
 
                         </fieldset>
-                        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
+                        <fieldset className="fieldset bg-base-200 border-black rounded-box  border p-4">
 
 
-                            <label className="label">Marks</label>
+                            <label className="label text-xl font-bold">Marks</label>
                             <input typeof='number' defaultValue={data.marks} type="text" name='marks' className="input" placeholder="Enter Number" />
                             {
                                 numberError && <p className='text-red-600 font-bold'>{numberError}</p>
@@ -105,10 +105,10 @@ const UpdateAssignment = () => {
 
 
                         </fieldset>
-                        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
+                        <fieldset className="fieldset bg-base-200 border-black rounded-box  border p-4">
 
 
-                            <label className="label">Description</label>
+                            <label className="label text-xl font-bold">Description</label>
                             <textarea defaultValue={data.description} name='description' className="textarea" placeholder="Description"></textarea>
                             {
                                 descriptionError && <p className='text-red-500 font-bold'>{descriptionError}</p>
@@ -117,40 +117,40 @@ const UpdateAssignment = () => {
 
                         </fieldset>
 
-                        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
+                        <fieldset className="fieldset bg-base-200 border-black rounded-box  border p-4">
 
 
-                            <label className="label">Email</label>
+                            <label className="label text-xl font-bold">Email</label>
                             <input type="email" defaultValue={data.email} readOnly name='email' className="input font-bold text-black" placeholder="Enter Plant-Type" />
 
 
                         </fieldset>
-                        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
+                        <fieldset className="fieldset bg-base-200 border-black rounded-box  border p-4">
 
 
-                            <label className="label">Name</label>
+                            <label className="label text-xl font-bold">Name</label>
                             <input type="text" defaultValue={data.name} readOnly name='name' className="input font-bold text-black" />
 
 
                         </fieldset>
-                        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
+                        <fieldset className="fieldset bg-base-200 border-black rounded-box  border p-4">
 
 
-                            <label className="label">Date</label>
+                            <label className="label text-xl font-bold">Date</label>
                             <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
 
 
                         </fieldset>
                     </div>
-                    <fieldset className="fieldset bg-base-200 border-base-300 rounded-box my-6 border p-4">
+                    <fieldset className="fieldset bg-base-200 border-black rounded-box my-6 border p-4">
 
 
-                        <label className="label">photo</label>
+                        <label className="label text-xl font-bold">photo</label>
                         <input defaultValue={data.photo} type="text" name='photo' className="input w-full " placeholder="photo url" />
 
 
                     </fieldset>
-                    <input type="submit" value="Update" className='w-full btn ' />
+                    <input type="submit" value="Update" className='w-full btn border-black ' />
                 </form>
             </div>
         </div>

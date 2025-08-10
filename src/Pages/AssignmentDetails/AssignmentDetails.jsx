@@ -6,7 +6,7 @@ const AssignmentDetails = () => {
     console.log(data._id)
     return (
         <div>
-            <div className="hero bg-amber-100 min-h-screen">
+            <div className="hero bg-amber-100 min-h-screen mt-20">
 
 
                 <div className="hero-content flex-col lg:flex-row">
