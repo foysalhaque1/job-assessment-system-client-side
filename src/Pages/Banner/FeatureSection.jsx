@@ -12,7 +12,7 @@ const FeatureSection = () => {
 
     const {user} = use(AuthContext)
     return (
-       <div className='mt-20 text-center mb-16 bg-[#dedcff] p-8 ' >
+       <div className='mt-30 text-center mb-16 bg-[#dedcff] p-8 ' >
 
             <h2 className='text-5xl font-bold ' >Feature of this application</h2>
             <p className='mt-10 text-2xl mb-10 font-bold text-black'> This typically involves a user interface where instructors can input details like title, instructions, due date, and points, and optionally attach files, rubrics, or other resources. Students should then be able to access and submit their work through a similar interface</p>

@@ -4,11 +4,11 @@ import { Link } from 'react-router';
 
 const Footer = () => {
     return (
-        <div className='bg-amber-100  '>
+        <div className='bg-amber-100 mt-30 '>
             <footer className="footer footer-horizontal footer-center bg-amber-100 text-base-content rounded p-10 mt-11">
                 <nav className="grid grid-flow-col gap-4">
-                    <Link to={'/terms'} className="link link-hover font-bold text-black">Terms of services</Link>
-                    <Link to={'/contact'} className="link link-hover font-bold text-black">Contact Info</Link>
+                    <Link to={'/terms'} className="link link-hover font-bold text-xl text-black">Terms of services</Link>
+                    <Link to={'/contact'} className="link link-hover font-bold text-xl text-black">Contact Info</Link>
 
 
 

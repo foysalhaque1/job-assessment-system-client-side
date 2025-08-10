@@ -19,7 +19,7 @@ const TechnologyUsed = () => {
 
 
     return (
-        <div className='mt-20 text-center mb-16 bg-[#dedcff] p-8 ' >
+        <div className='mt-30 text-center mb-16 bg-[#dedcff] p-8 ' >
 
             <h2 className='text-5xl font-bold ' >   Technology Used In This Platform</h2>
             

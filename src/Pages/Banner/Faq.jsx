@@ -5,8 +5,8 @@ const Faq = () => {
     
     
     return (
-         <div className='w-11/12 mx-auto bg-[#dedcff] p-5'>
-            <h2 className='text-2xl font-bold text-center'>Why We Built This Platform</h2>
+         <div className='max-w-full mt-30 mx-auto bg-[#dedcff] p-5'>
+            <h2 className='text-5xl font-bold text-center'>Why We Built This Platform</h2>
              <div className='max-w-6xl mx-auto border m-8 p-7 rounded-2xl'>
                         <h1 className='text-blue-600 font-bold'>Make Collaboration Easy   </h1>
                         <h2 className='font-bold text-black'>All your assignments, submissions, and feedback are in one place. You won’t have to juggle between apps or search through endless messages anymore. </h2>

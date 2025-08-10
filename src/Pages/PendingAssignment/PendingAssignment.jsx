@@ -17,7 +17,7 @@ const PendingAssignment = () => {
     return (
 
          <div>
-            <div className="overflow-x-auto mx-auto mt-30 bg-[#dedcff]">
+            <div className="overflow-x-auto max-w-full mx-auto mt-30 bg-[#dedcff]">
                 <table className="table mx-auto">
                     {/* head */}
                     <thead className='mx-auto'>

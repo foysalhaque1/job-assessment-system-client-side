@@ -101,9 +101,9 @@ const Assignments = () => {
                         <label htmlFor='Easy'>Difficult</label>
                     </div>
                 </div>
-                <div className='flex flex-col'>
+                <div className='flex flex-col px-6 '>
                     <label>Search</label>
-                    <input placeholder='search here by title' value={query} className='border-2 space-x-2 p-2' type="text" name="search" onChange={handleSearch} />
+                    <input placeholder='search here by title' value={query} className='border-2 space-x-2 p-2 rounded-xs' type="text" name="search" onChange={handleSearch} />
                 </div>
                 <div className='mt-10 text-center mb-16  p-8 bg-[#dedcff]' >
 
