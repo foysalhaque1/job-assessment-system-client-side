@@ -4,7 +4,7 @@ import React  from 'react';
 const Faq2 = () => {
    
     return (
-       <div className='w-11/12 mx-auto bg-amber-100 p-5'>
+       <div className='w-11/12 mx-auto bg-[#dedcff] p-5'>
             <h2 className='text-2xl font-bold text-center'>FAQ Section</h2>
              <div className='max-w-6xl mx-auto border m-8 p-7 rounded-2xl'>
                         <h1 className='text-blue-600 font-bold'>Question:How can i create assignment? </h1>

@@ -11,7 +11,7 @@ import Faq2 from './Faq2';
 const Banner = () => {
     return (
         <div>
-            <div className="hero bg-base-100 min-h-screen mt-3.5 max-w-[1400px] mx-auto">
+            <div className="hero bg-[#dedcff] min-h-screen mt-3.5 max-w-[1400px] mx-auto">
                 <div className="hero-content  grid grid-cols-1 md:grid-cols-2">
 
                     <div className='flex-1'>
