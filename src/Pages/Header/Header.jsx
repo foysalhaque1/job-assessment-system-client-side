@@ -22,7 +22,7 @@ const Header = () => {
     }
     return (
         <div>
-            <div className="navbar bg-[#dedcff] px-5 shadow-sm ">
+            <div className="navbar bg-[#dedcff] px-5 shadow-sm  fixed left-0 top-0 z-40">
                 <div className="navbar-start ">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -34,7 +34,7 @@ const Header = () => {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-1">
                             <Link className='btn btn-secondary' to={'/'} >Home</Link>
                             <Link className='btn btn-secondary' to={'/assignments'} >Assignments</Link>
-                            {user && <Link className='btn btn-secondary' to={'/pendingAssignments'} >Pending Assignments</Link>}
+                             <Link className='btn btn-secondary' to={'/pendingAssignments'} >Pending Assignments</Link>
                             {user && <Link to={'/createAssignment'} className='btn btn-secondary' >Create Assignment</Link>}
                             {user && <Link to={'/myAttemptedAssignments'} className='btn btn-secondary' >My Attempted Assignments</Link>}
                             <div className='lg:hidden '>

@@ -17,7 +17,7 @@ const PendingAssignment = () => {
     return (
 
          <div>
-            <div className="overflow-x-auto mx-auto">
+            <div className="overflow-x-auto mx-auto mt-30 bg-[#dedcff]">
                 <table className="table mx-auto">
                     {/* head */}
                     <thead className='mx-auto'>
@@ -50,7 +50,7 @@ const PendingAssignment = () => {
                                 <td>{user.status}</td>
                                 <td>{user.submittedEmail}</td>
                                 <th className='space-x-3'>
-                                    <Link to={`/giveMarks/${user._id}`} ><button className="btn  btn-primary">Give a mark</button></Link>
+                                    <Link to={`/giveMarks/${user._id}`} ><button className="btn lg:text-[16px] text-[10px]  btn-secondary">Give a mark</button></Link>
                                    
 
 

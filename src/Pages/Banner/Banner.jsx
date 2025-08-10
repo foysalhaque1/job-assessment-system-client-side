@@ -11,8 +11,8 @@ import Faq2 from './Faq2';
 const Banner = () => {
     return (
         <div>
-            <div className="hero bg-[#dedcff] min-h-screen mt-3.5 max-w-[1400px] mx-auto">
-                <div className="hero-content  grid grid-cols-1 md:grid-cols-2">
+            <div className="hero bg-[#dedcff] min-h-screen mt-20 max-w-[1400px] mx-auto ">
+                <div className="hero-content  grid grid-cols-1 lg:grid-cols-2 ">
 
                     <div className='flex-1'>
                         {/* <motion.h1
@@ -35,21 +35,21 @@ const Banner = () => {
                         </p>
                        
                     </div>
-                    <div className='flex-1'>
+                    <div className='flex-1 '>
 
                         <motion.img
 
                             src={img1}
-                            animate={{ y: [-50, 150, -50] }}
+                            animate={{ y: [-50, 0, -50] }}
                             transition={{ duration: 5, repeat: Infinity }}
-                            className="md:max-w-2xl max-w-2xs rounded-t-4xl border-s-8 shadow-2xl flex-1"
+                            className="md:max-w-xl max-w-2xs rounded-t-4xl border-s-8 shadow-2xl flex-1"
                         />
                         <motion.img
 
                             src={img2}
-                            animate={{ x: [30, 50, -30],y: [-150]  } }
+                            animate={{ x: [30, 50, -0],y: [-150]  } }
                             transition={{ duration: 10, repeat: Infinity }}
-                            className="md:max-w-2xl max-w-2xs rounded-t-4xl border-s-8 shadow-2xl flex-1"
+                            className="md:max-w-xl max-w-2xs rounded-t-4xl border-s-8 shadow-2xl flex-1"
                         />
                     </div>
                     

@@ -11,11 +11,11 @@ const Assignments = () => {
     const { user } = use(AuthContext)
     const info = useLoaderData();
     const [data, setData] = useState(info);
-     const handleSearch = (e) => {
-       const value = e.target.value;
-       setQuery(value);
-       const filterData = info.filter(data=>data.Title.toLowerCase().includes(value.toLowerCase()));
-       setData(filterData)
+    const handleSearch = (e) => {
+        const value = e.target.value;
+        setQuery(value);
+        const filterData = info.filter(data => data.Title.toLowerCase().includes(value.toLowerCase()));
+        setData(filterData)
     }
 
     const handleEasy = () => {
@@ -33,8 +33,8 @@ const Assignments = () => {
         fetch('https://job-assessment-project-server2.vercel.app/assignmentLevel/Difficult').then(res => res.json())
             .then(data => setData(data));
     }
-   
- 
+
+
 
 
     console.log(info);
@@ -86,7 +86,7 @@ const Assignments = () => {
     return (
         <div>
 
-            <div className="overflow-x-auto mx-auto">
+            <div className="overflow-x-auto mx-auto mt-20">
                 <div className='flex gap-2.5 mx-auto justify-center my-3  '>
                     <div>
                         <input onClick={handleEasy} type="radio" name="topping" id="Easy" />
@@ -103,10 +103,42 @@ const Assignments = () => {
                 </div>
                 <div className='flex flex-col'>
                     <label>Search</label>
-                    <input  placeholder='search here by title' value={query} className='border-2 space-x-2 p-2' type="text" name="search" onChange={handleSearch} />
+                    <input placeholder='search here by title' value={query} className='border-2 space-x-2 p-2' type="text" name="search" onChange={handleSearch} />
                 </div>
-                <table className="table mx-auto">
-                    {/* head */}
+                <div className='mt-10 text-center mb-16  p-8 bg-[#dedcff]' >
+
+
+
+
+
+                    <div className='grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 my-14'  >
+
+
+                        {
+                            data.map((user, index) =>
+                                <div className='border-2 p-3 flex flex-col rounded-xl'>
+
+                                    <h2 className='text-2xl text-blue-700 font-bold'>{user.Title}</h2>
+                                    <img className='py-1.5' src={user.thumbnails} alt="" />
+                                    <p className='font-bold text-black'>Marks: {user.marks} </p>
+                                    <p className='font-bold text-black'>Level: {user.level} </p>
+                                    <p className='font-bold text-black'>Created By: {user.email} </p>
+                                    <div className='space-x-3 my-1.5'>
+                                        <Link to={`/assignments/${user._id}`} ><button className="btn  btn-secondary">See More</button></Link>
+                                        <Link to={`/updateAssignment/${user._id}`} ><button className="btn  btn-secondary">Update</button></Link>
+                                        <button onClick={() => handleDelete(user._id)} className="btn  btn-secondary">Delete</button>
+                                    </div>
+                                </div>
+
+
+                            )
+                        }
+
+
+                    </div>
+                </div>
+                {/* <table className="table mx-auto">
+                    
                     <thead className='mx-auto'>
                         <tr>
                             <th className='text-blue-500'>
@@ -126,7 +158,7 @@ const Assignments = () => {
                         </tr>
                     </thead>
                     <tbody >
-                        {/* row 1 */}
+                     
                         {
                             data.map((user, index) => <tr>
                                 <th>
@@ -143,9 +175,7 @@ const Assignments = () => {
 
                                     </div>
                                 </td>
-                                {/* <td>
-                                    {user.thumbnails}
-                                </td> */}
+                              
                                 <td>{user.Title}</td>
                                 <td>{user.marks}</td>
                                 <td>{user.level}</td>
@@ -161,9 +191,9 @@ const Assignments = () => {
                         }
 
                     </tbody>
-                    {/* foot */}
+                   
 
-                </table>
+                </table> */}
             </div>
         </div>
     );
