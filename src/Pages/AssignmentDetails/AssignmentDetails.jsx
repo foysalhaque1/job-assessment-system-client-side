@@ -15,15 +15,15 @@ const AssignmentDetails = () => {
                         className="w-full rounded-lg shadow-2xl"
                     />
                     <div>
-                        <h1 className="text-5xl font-bold w-full">Deatils of Assignment</h1>
+                        <h1 className="text-5xl font-bold w-full text-black">Deatils of Assignment</h1>
                         <div className="card-body">
-                            <h2 className="card-title font-bold">Title:  {data.Title}</h2>
-                            <p>Level: {data.level}</p>
-                            <p>Description: {data.description}</p>
-                            <p>Marks: {data.marks}</p>
+                            <h2 className="card-title font-bold text-black">Title:  {data.Title}</h2>
+                            <p className='text-black'>Level: {data.level}</p>
+                            <p className='text-black' >Description: {data.description}</p>
+                            <p className='text-black'>Marks: {data.marks}</p>
                           
-                            <p>Name: {data.name}</p>
-                            <p>Email: {data.email}</p>
+                            <p className='text-black'>Name: {data.name}</p>
+                            <p className='text-black'>Email: {data.email}</p>
                             <Link to={`/takeAssignment/${data._id}`} className='btn btn-secondary'>Take Assignment</Link>
                            
 
