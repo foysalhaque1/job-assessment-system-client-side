@@ -16,7 +16,7 @@ const MyAttemptedAssignments = () => {
     console.log(user.accessToken)
 
     return (
-        <div className='mt-[80px] mb-10 bg-[#dedcff]'>
+        <div className=' mt-30 mb-10 bg-[#dedcff]'>
           {
             !loading &&   <Suspense fallback={<Loading></Loading>}>
 
