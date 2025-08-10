@@ -22,11 +22,12 @@ const Header = () => {
     }
     return (
         <div>
-            <div className="navbar bg-base-100 shadow-sm">
-                <div className="navbar-start">
+            <div className="navbar bg-[#dedcff] px-5 shadow-sm ">
+                <div className="navbar-start ">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+
                         </div>
                         <ul
                             tabIndex={0}
@@ -34,23 +35,35 @@ const Header = () => {
                             <Link className='btn btn-secondary' to={'/'} >Home</Link>
                             <Link className='btn btn-secondary' to={'/assignments'} >Assignments</Link>
                             {user && <Link className='btn btn-secondary' to={'/pendingAssignments'} >Pending Assignments</Link>}
+                            {user && <Link to={'/createAssignment'} className='btn btn-secondary' >Create Assignment</Link>}
+                            {user && <Link to={'/myAttemptedAssignments'} className='btn btn-secondary' >My Attempted Assignments</Link>}
+                            <div className='lg:hidden '>
+
+                                <DarkToggleButton></DarkToggleButton>
+                            </div>
+
                         </ul>
                     </div>
-                    <img className='w-[100px]' src={logo} alt="" />
+                    <img className='w-[60px] h-[60px] ' src={logo} alt="" />
                 </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal space-x-5 px-1">
-                        <Link to={'/'} >Home</Link>
-                        <Link to={'/assignments'} >Assignments</Link>
-                        {user && <Link to={'/pendingAssignments'} >Pending Assignments</Link>}
+                <div className="navbar-center hidden lg:flex ">
+                    <ul className="menu menu-horizontal space-x-5 px-1 mr-16">
+                        <Link to={'/'} className='font-bold' >Home</Link>
+                        <Link className='font-bold' to={'/assignments'} >Assignments</Link>
+                        <Link to={'/pendingAssignments'} className='font-bold'>Pending Assignments</Link>
+                        {user && <Link to={'/createAssignment'} className='font-bold' >Create Assignment</Link>}
+                        {user && <Link to={'/myAttemptedAssignments'} className='font-bold' >My Attempted Assignments</Link>}
 
                     </ul>
                 </div>
-                
-                
-                <div className="navbar-end space-x-2.5">
-                    <DarkToggleButton></DarkToggleButton>
-                 {
+
+
+                <div className="navbar-end space-x-2.5 ">
+                    <div className='lg:block hidden'>
+
+                        <DarkToggleButton ></DarkToggleButton>
+                    </div>
+                    {
                         user ? (<button onClick={handleSignOut} className='btn'>Log out</button>) : (<Link className='btn' to={'/login'} >Log in</Link>)
                     }
 
@@ -58,7 +71,7 @@ const Header = () => {
                         user &&
                         <details className="dropdown">
                             <summary className="btn m-1 relative group">
-                                <img className=' ' src={user.photoURL} alt="" />
+                                <img className=' w-6 h-6 object-cover ' src={user.photoURL} alt="" />
                                 <div className='absolute w-full h-full -bottom-10 opacity-0 group-hover:bottom-0 group-hover:opacity-100 bg-black/20 flex justify-center items-center transition-all duration-300'>
                                     <h2 className='text-white font-bold'>{user.displayName}</h2>
 
@@ -75,7 +88,7 @@ const Header = () => {
                     }
 
                     <div>{user && user.email}</div>
-                   
+
 
 
                 </div>

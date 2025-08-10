@@ -67,9 +67,8 @@ export const router = createBrowserRouter([
             },
             {
                 path:"/pendingAssignments",
-                element:<PrivateRoute>
-                     <PendingAssignment></PendingAssignment>
-                </PrivateRoute>,
+                element:
+                     <PendingAssignment></PendingAssignment>,
                 loader:()=>fetch('https://job-assessment-project-server2.vercel.app/submittedAssignment')
             },
             {

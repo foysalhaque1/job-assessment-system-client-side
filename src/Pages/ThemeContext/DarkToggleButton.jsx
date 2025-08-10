@@ -8,7 +8,7 @@ const DarkToggleButton = () => {
     
     return (
         <div className='mx-4'>
-            <button onClick={()=>setDarkMode(!darkMode)} className='btn btn-secondary  space-x-4'>
+            <button onClick={()=>setDarkMode(!darkMode)} className='btn btn-secondary w-full  space-x-4'>
                 {
                     darkMode ? <div className='flex gap-2 items-center'><FaSun></FaSun> Light</div> : <div className='flex items-center' ><FaMoon></FaMoon> Dark</div>
                 }
