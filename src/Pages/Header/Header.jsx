@@ -87,7 +87,7 @@ const Header = () => {
 
                     }
 
-                    <div>{user && user.email}</div>
+                    <div className='lg:block hidden'>{user && user.email}</div>
 
 
 

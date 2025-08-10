@@ -123,7 +123,7 @@ const Assignments = () => {
                                     <p className='font-bold text-black'>Marks: {user.marks} </p>
                                     <p className='font-bold text-black'>Level: {user.level} </p>
                                     <p className='font-bold text-black'>Created By: {user.email} </p>
-                                    <div className='space-x-3 my-1.5'>
+                                    <div className='flex justify-center gap-1 my-1.5'>
                                         <Link to={`/assignments/${user._id}`} ><button className="btn  btn-secondary">See More</button></Link>
                                         <Link to={`/updateAssignment/${user._id}`} ><button className="btn  btn-secondary">Update</button></Link>
                                         <button onClick={() => handleDelete(user._id)} className="btn  btn-secondary">Delete</button>

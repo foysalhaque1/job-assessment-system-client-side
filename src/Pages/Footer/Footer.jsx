@@ -29,7 +29,7 @@ const Footer = () => {
                     </div>
                 </nav>
                 <aside>
-                    <p>Copyright © {new Date().getFullYear()} - All right reserved by Apps Store</p>
+                    <p className='text-black'>Copyright © {new Date().getFullYear()} - All right reserved by Apps Store</p>
                 </aside>
             </footer>
         </div>

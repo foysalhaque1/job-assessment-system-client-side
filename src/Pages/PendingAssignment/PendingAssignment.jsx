@@ -38,18 +38,18 @@ const PendingAssignment = () => {
                         {/* row 1 */}
                         {
                             pendingData.map((user, index) => <tr>
-                                <th>
+                                <th className='text-black'>
                                     {index + 1}
                                 </th>
                                 
                                 {/* <td>
                                     {user.thumbnails}
                                 </td> */}
-                                <td>{user.Title}</td>
-                                <td>{user.assinmentMarks}</td>
-                                <td>{user.status}</td>
-                                <td>{user.submittedEmail}</td>
-                                <th className='space-x-3'>
+                                <td className='text-black'>{user.Title}</td>
+                                <td className='text-black'>{user.assinmentMarks}</td>
+                                <td className='text-black'>{user.status}</td>
+                                <td className='text-black'>{user.submittedEmail}</td>
+                                <th className='space-x-3 text-black'>
                                     <Link to={`/giveMarks/${user._id}`} ><button className="btn lg:text-[16px] text-[10px]  btn-secondary">Give a mark</button></Link>
                                    
 

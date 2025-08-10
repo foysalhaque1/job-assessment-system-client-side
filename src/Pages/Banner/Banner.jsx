@@ -26,11 +26,11 @@ const Banner = () => {
                         <motion.h1
                             initial={{ scale: 0 }}
                             animate={{ scale: 1, transition: { duration: 4 } }}
-                            className="text-5xl font-bold">A website  <motion.span
+                            className="text-5xl font-bold text-black">A website  <motion.span
                                 animate={{ color: ['#1cbb28', '#ee3611', '#1139ee'], transition: { duration: 2, repeat: Infinity } }}
 
                             >that works</motion.span>, a team that collaborates</motion.h1>
-                        <p className="py-6">
+                        <p className="py-6 text-black">
                             A web development group assignment typically involves students collaborating to create a website or web application.
                         </p>
                        

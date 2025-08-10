@@ -21,7 +21,7 @@ const TechnologyUsed = () => {
     return (
         <div className='mt-30 text-center mb-16 bg-[#dedcff] p-8 ' >
 
-            <h2 className='text-5xl font-bold ' >   Technology Used In This Platform</h2>
+            <h2 className='text-5xl font-bold text-black' >   Technology Used In This Platform</h2>
             
             <div className='grid grid-cols-1'>
 

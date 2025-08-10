@@ -25,15 +25,15 @@ const MySubmission = ({attemptedPromise}) => {
                         {/* row 1 */}
                         {
                             data.map((user, index) => <tr>
-                                <th>
+                                <th className='text-black'>
                                     {index + 1}
                                 </th>
                                
                          
-                                <td>{user?.Title}</td>
-                                <td>{user?.assignmentTotalMarks}</td>
-                                <td>{user.achieveingMarks? user.achieveingMarks : 'Pending'}</td>
-                                <td>{user.feedback? user.feedback : 'Pending'}</td>
+                                <td className='text-black'>{user?.Title}</td>
+                                <td className='text-black'>{user?.assignmentTotalMarks}</td>
+                                <td className='text-black'>{user.achieveingMarks? user.achieveingMarks : 'Pending'}</td>
+                                <td className='text-black'>{user.feedback? user.feedback : 'Pending'}</td>
                                 
                             </tr>)
                         }

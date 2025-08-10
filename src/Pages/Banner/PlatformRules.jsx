@@ -3,7 +3,7 @@ import React from 'react';
 const PlatformRules = () => {
     return (
         <div className='max-w-full mx-auto mt-30 bg-[#dedcff] p-5'>
-            <h2 className='text-5xl font-bold text-center'>Platform Rules and Guidelines</h2>
+            <h2 className='text-5xl font-bold text-center text-black'>Platform Rules and Guidelines</h2>
              <div className='max-w-6xl mx-auto border m-8 p-7 rounded-2xl'>
                         <h1 className='text-blue-600 font-bold'>Respect Everyone:</h1>
                         <h2 className='font-bold text-black'>Treat all users with respect and kindness. Harassment, hate speech, and any form of discrimination will not be tolerated. </h2>
