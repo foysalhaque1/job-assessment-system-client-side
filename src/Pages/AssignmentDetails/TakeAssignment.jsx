@@ -53,26 +53,26 @@ const TakeAssignment = () => {
                 </div>
                 <form onSubmit={formSubmit}  >
                     <div className='flex flex-col gap-6' >
-                        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
+                        <fieldset className="fieldset bg-base-200 border-black rounded-box  border p-4">
 
 
-                            <label className="label">Title</label>
+                            <label className="label text-xl font-bold">Title</label>
                             <input type="text" name='Title' className="input w-full" placeholder="Enter Title" />
 
 
                         </fieldset>
-                        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
+                        <fieldset className="fieldset bg-base-200 border-black rounded-box  border p-4">
 
 
-                            <label className="label">Google Doc Link</label>
+                            <label className="label text-xl font-bold">Google Doc Link</label>
                             <input type="url" name='docLink' className="input w-full" placeholder="Enter Google doc link" />
 
 
                         </fieldset>
-                        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
+                        <fieldset className="fieldset bg-base-200 border-black rounded-box  border p-4">
 
 
-                            <label className="label">Status</label>
+                            <label className="label text-xl font-bold">Status</label>
                             <select name='status' defaultValue="Pending" className="select w-full">
                                 <option disabled={true}>Pick a color</option>
                                 <option>Pending</option>
@@ -84,19 +84,19 @@ const TakeAssignment = () => {
 
                         </fieldset>
 
-                        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
+                        <fieldset className="fieldset bg-base-200 border-black rounded-box  border p-4">
 
 
-                            <label className="label">Note</label>
+                            <label className="label text-xl font-bold">Note</label>
                             <textarea name='note' className="textarea w-full" placeholder="Note"></textarea>
 
 
                         </fieldset>
 
-                        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
+                        <fieldset className="fieldset bg-base-200 border-black rounded-box  border p-4">
 
 
-                            <label className="label">Submitted Email</label>
+                            <label className="label text-xl font-bold">Submitted Email</label>
                             <input type="email" readOnly value={user?.email} name='submittedEmail' className="input font-bold text-black" placeholder="Enter Plant-Type" />
 
 
@@ -105,7 +105,7 @@ const TakeAssignment = () => {
 
                     </div>
 
-                    <input type="submit" value="Submit" className='w-full btn space-y-2 ' />
+                    <input type="submit" value="Submit" className='w-full btn space-y-2 border-black mt-2 ' />
                 </form>
             </div>
         </div>
